@@ -1,0 +1,89 @@
+body
+{
+  background: lightblue;
+  text-align:center;
+  text-decoration-style: solid;
+}
+
+
+h1
+ {
+    border-style: dotted;
+    border-color:green;
+    border-width: 5px;
+    border-radius: 10px; 
+    border-spacing:100px;
+    text-align:center;
+    text-decoration-style: solid;
+      
+}  
+
+h2
+ {
+    border-style: dotted;
+    border-color:violet;
+    border-width: 5px;
+    border: size 5px;
+    text-align:center;
+    text-decoration-style: solid;
+      
+}  
+
+h3
+{   
+   
+    border-style:solid;
+    border-color:rgba(160, 245, 226, 0.852);
+    background-color: rgba(160, 245, 226, 0.852);
+    left:500px;
+    top:100;
+    right:1000px;
+    border-width: 5px;
+    border-radius: 10px; 
+    border-spacing:100px;
+    
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0,5s, fadeout 10s 10s;
+  animation: fadein 0,5s, fadeout 10s 10s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
