@@ -1,0 +1,23 @@
+body {
+    background-color: #fefbd8;
+  }
+  
+  h1 {
+    background-color: #beb2f3;
+  }
+  
+  div {
+    background-color: #d5f4e6;
+  }
+  
+  span {
+    background-color: #f18973;
+  }
+   img {
+       position:relative;
+       left:350px;
+
+   }
+   h2 {
+     color:white;
+   }
