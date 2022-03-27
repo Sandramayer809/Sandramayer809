@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <title>Tools for Indoor Gardener</title>
+    <link rel="stylesheet" type="text/css" href="Tools for Indoor Gardener.css">
+
+</head>
+
+<body>
+    <h1>TOOLS FOR GARDEN</h1>
+   
+ <h4><img src="C:\Users\Home\Documents\20220125_143234.jpg"
+ width="900"
+ height="500"/> </h4>
+<h3>Welcome to our page which includes everything what is needed to make your garden beautiful....</h3>
+
+     <h2> We offer to our customers quality tools for work in garden</h2>
+
+<button onclick="typeWriter()">Here you will find which garden tools are available</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Digging Tool-(Shovels, Spades, Forks)   Watering Tools-(Hose Pipes, Sprinklers, Watering Cans)  Cutting Tools-(Flower Shears, Hedge Shears, Secateurs and Hand Pruners, Loppers, Pruning Saws, Axes and Hatchets, Scythes)  Planting Tools-(Trowels, Dibbers and Bulb Planters) and many other tools are availaible for work in garden in our shop.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      background: #81eea0f1;
+    }
+    
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 80px;
+      text-align: center;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #888;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(126, 77, 77, 0.8);
+      color: white;
+    }
+    
+    /* The dot/bullet/indicator container */
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #ddd;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(96, 220, 106);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Add an italic font style to all quotes */
+    q {font-style: italic;}
+    
+    /* Add a blue color to the author */
+    .author {color: cornflowerblue;}
+    </style>
+    </head>
+    <body>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides">
+      <q>ChainSaw made in Poland.</q>
+      <p class="text">- we have a good offer on this tool <img src="C:\Users\Home\Documents\20220201_103624.jpg" width="400px" height="400px"></p>
+    </div>
+    
+    <div class="mySlides">
+      <q>Our shop proposes a quality PitchFork made in Poland.</q>
+      <p class="text">- we have a good offer on this tool <img src="C:\Users\Home\Documents\20220201_103850.jpg" width="400px" height="400px"> </p>
+    </div>
+    
+    <div class="mySlides">
+      <q>Our shop proposes a quality Axe which is made in Germany.</q>
+      <p class="text">- we have a good offer -20% on this tool <img src="C:\Users\Home\Documents\20220201_103936.jpg" width="400px" height="400px"></p>
+    </div>
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<p> <strong>Leaf Blower</strong>
+  <br><br>
+  A leaf blower is a great substitute for a rake, as it can do the same or even more, but with less effort. <img src="C:\Users\Home\Documents\20220201_103647.jpg" width="200px" height="200px"></p>
+
+  <p><strong> Feeders, Food & Care</strong>
+    <br><br>
+    Bird Feeding The more feeding stations & food varieties you offer, the more birds you'll attract to your garden!<img src="C:\Users\Home\Documents\20220130_184626.jpg" width="200px" height="200px"></p>
+
+    <p> <strong>Lawn Mower Grass Cutting Machine</strong>
+      <br><br>
+      A grass cutting machine helps you to cut excess grass and trim hedges.<img src="C:\Users\Home\Documents\20220131_135823.jpg" width="200px" height="200px"></p>
+
+      <p><strong>Watering Can</strong>
+        <br><br>
+        A well-designed watering can wastes less water and makes less mess. <img src="C:\Users\Home\Documents\20220201_110704.jpg" width="200px" height="200px"></p>
+ 
+        <p> <strong>Compost Bins & Composters</strong>
+          <br><br>
+          Compost Bins & Composters Give nature a hand with our range of compost bins and composters!<img src="C:\Users\Home\Documents\20220201_111346.jpg" width="200px" height="200px"></p>
+
+          <p><strong>Digger Hand Tool</strong>
+            <br><br>
+          Hand digger can be used on tilled soil, dry and moist soil, as well as frozen ground, making them an incredibly versatile tool.<img src="C:\Users\Home\Documents\20220201_104059.jpg" width="200px" height="200px"></p>
+
+</body>
+</html>
+
+
+
